@@ -28,6 +28,9 @@ docker build -t dystopia-dedicated-server . && \
 docker run -d -it \
   -p 27016:27016/tcp \
   -p 27016:27016/udp \
+  -p 27015:27015/tcp \
+  -p 27015:27015/udp \
+  -p 27006:27006/tcp \
   -p 27006:27006/udp \
   --name dystopia-dedicated-server \
   dystopia-dedicated-server
